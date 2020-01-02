@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="surveyform.css" type="text/css" />
+    <link
+      href="https://fonts.google.com/specimen/Kulim+Park?selection.family=Kulim+Park"
+      rel="stylesheet"
+    />
+    <title>Survey form for Teachers</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-footer">
+        <div class="header">
+          <h1 id="title">Survey Form</h1>
+        </div>
+      </header>
+      <main role="main" class="">
+        <div class="main">
+          <p id="desciption">
+            Tell me about your Interest in Teaching as a profession
+          </p>
+          <div id="form-area">
+            <form id="survey-form">
+              <div class="form-item">
+                <label id="name-label" for="name">Name:</label><br />
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Your Name"
+                /><br />
+                <label for="email-label" for="email">Email:</label><br />
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="email@example.com"
+                /><br />
+                <label id="number-label" for="number"> Age:"</label><br />
+                <input
+                  type="number"
+                  name="number"
+                  id="number"
+                  max="999"
+                  min="0"
+                  placeholder="30"
+                /><br />
+              </div>
+              <!--select box-->
+              <div class="form-item">
+                <label id="dropdown-label" for="dropdown"
+                  >Which option best describes your current role</label
+                ><br />
+                <select id="dropdown">
+                  <option value="" disabled selected>select an Option </option>
+                  <option value="1">Student</option>
+                  <option value="2">Fulltime Job</option>
+                  <option value="3">Fulltime learner</option>
+                  <option value="4">Prefer not to Say</option>
+                  <option value="5">Other</option> </select
+                ><br />
+              </div>
+              <!--radio button-->
+              <div class="form-item">
+                <label>How much experience do you have in Teaching</label><br />
+                <input type="radio" name="recommended" value="0" />This is the
+                first teaching job for you<br />
+                <input type="radio" name="recommended" value="1" />You have
+                worked at any other institute<br />
+                <input type="radio" name="recommended" value="2" />You have
+                worked in any specific area of education department<br />
+                <input type="radio" name="recommended" value="3" />You have
+                professional experience in the field of education<br />
+              </div>
+              <!--checkbox-->
+              <div class="form-item">
+                <label id="comment-label" for="comment">Comment:</label><br />
+                <textarea id="comment" rows="3"></textarea>
+              </div>
+              <div id="submit-btn">
+                <input id="submit" class="button" type="submit" value="Submit"
+              </div>
+            </form>
+          </div>
+          <!--end of form area-->
+        </div>
+      </main>
+      <footer class="header-footer">
+        <div class="footer">
+          <div class="center">
+            This page was built by Mohammed H Mussaddiq
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

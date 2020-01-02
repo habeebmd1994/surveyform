@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: Sunflower;
+  --main-color: rgb(42, 99, 133);
+  align-items: center;
+  padding: 3rem 0;
+  background-color: rgb(1, 24, 19);
+}
+main {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: rgb(192, 74, 70);
+  background-color: rgb(180, 125, 125);
+  margin: 2em 1em;
+  padding: 1em;
+  color: var(--main-color);
+}
+#description {
+  text-align: center;
+}
+.form-item {
+  padding-top: 1rem;
+}
+label {
+  font-weight: bold;
+}
+#comment {
+  width: 100%;
+}
+.button {
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+  color: white;
+  padding-top: 10px 20px;
+  background-color: var(--main-color);
+  border: none;
+}
+.button:hover {
+  background-color: rgb(197, 184, 0);
+}
+.header-footer {
+  background-color: var(--main-color);
+  width: 100%;
+  text-align: center;
+  color: white;
+}
